@@ -16,8 +16,14 @@ public class Exercises1 {
     the series -> 1, 1, 2, 3, 5, 8, ...
     */
     public long fibonacci(int n) {
-        // TODO
-        return 0;
+        long i = 0;
+        long j = 1;
+        for (int k = 0; k < n; k++){
+            long temp = i;
+            i = j;
+            j += temp;
+        }
+        return i;
     }
 
 
